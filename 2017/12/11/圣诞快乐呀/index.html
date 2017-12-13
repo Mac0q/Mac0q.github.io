@@ -396,23 +396,49 @@
           
   <div class="comments" id="comments">
     
-    
-       <div onclick="function snow(){
-    var s=document.createElement('script');
-    s.src='http://www.nowamagic.net/librarys/webapp/snow.js';
-    s.async=true;
-    s.addEventListener('load',function(){
-        var app = new goog.egg.snowyfog.Snowyfog();
-        app.init();
-    },false);
-    document.getElementById('snfloader').appendChild(s);};" id="snow-display-button">下点雪玩玩呀</div>
-       <div id="snow-container" style="display:none"></div>
+      
+      <p><input type="button" value=" 下雪吧 " onclick="snow();" /></p>
+
+
+      <div id="main"> 
+	<div id="snfloader"> 
+	<script id="snfloader_script">
+	/*
+	(function(){
+		var s=document.createElement('script');
+		s.src='../../webapp/snow.js';
+		s.async=true;
+		s.addEventListener('load',function(){
+			var app = new goog.egg.snowyfog.Snowyfog();
+			app.init();
+		},false);
+		document.getElementById('snfloader').appendChild(s);})();*/
+	function snow(){
+		var s=document.createElement('script');
+		s.src='/js/src/snow.js';
+		s.async=true;
+		s.addEventListener('load',function(){
+			var app = new goog.egg.snowyfog.Snowyfog();
+			app.init();
+		},false);
+		document.getElementById('snfloader').appendChild(s);};
+	</script> 
+	</div> 
+
+	<div> 
+		<div id="cnt"> 
+			<div class="mw">
+				<div id="bfoot"></div> 
+				<script type="text/javascript">(new Image()).src="snow.gif";</script> 
+				<noscript><img src="snow.gif" height=1 width=1 alt=""></noscript> 
+			</div> 
+		</div> 
+	</div> 
+</div>
 
      
 
   </div>
-
-
 
 
         </div>
@@ -680,5 +706,8 @@
 
 <script type="text/javascript" src="/js/src/snow.js"></script>
 
+     
+
 </body>
 </html>
+
