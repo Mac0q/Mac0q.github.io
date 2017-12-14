@@ -85,7 +85,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="技术," />
 
 
 
@@ -101,16 +101,20 @@
 
 
 
-<meta name="description" content="一个个坑呀，慢慢踩">
-<meta property="og:type" content="website">
-<meta property="og:title" content="死肥仔的文艺内核">
-<meta property="og:url" content="http://Mac0q.github.io/index.html">
+<meta name="description" content="##前言  喜欢写 Blog 的人，会经历三个阶段。 第一阶段，刚接触 Blog，觉得很新鲜，试着选择一个免费空间来写。 第二阶段，发现免费空间限制太多，就自己购买域名和空间，搭建独立博客。 第三阶段，觉得独立博客的管理太麻烦，最好在保留控制权的前提下，让别人来管，自己只负责写文章。  这是阮一峰在博客中写到的关于 Blog 的想法，而这里的第三阶段的实现就是利用 GitHub Pages 搭建博">
+<meta name="keywords" content="技术">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo搭建静态博客【1】">
+<meta property="og:url" content="http://Mac0q.github.io/2017/12/14/hexo搭建静态博客【1】/index.html">
 <meta property="og:site_name" content="死肥仔的文艺内核">
-<meta property="og:description" content="一个个坑呀，慢慢踩">
+<meta property="og:description" content="##前言  喜欢写 Blog 的人，会经历三个阶段。 第一阶段，刚接触 Blog，觉得很新鲜，试着选择一个免费空间来写。 第二阶段，发现免费空间限制太多，就自己购买域名和空间，搭建独立博客。 第三阶段，觉得独立博客的管理太麻烦，最好在保留控制权的前提下，让别人来管，自己只负责写文章。  这是阮一峰在博客中写到的关于 Blog 的想法，而这里的第三阶段的实现就是利用 GitHub Pages 搭建博">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://mac0q.github.io/2017/12/14/hexo搭建静态博客【1】/2.png">
+<meta property="og:updated_time" content="2017-12-14T16:44:26.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="死肥仔的文艺内核">
-<meta name="twitter:description" content="一个个坑呀，慢慢踩">
+<meta name="twitter:title" content="hexo搭建静态博客【1】">
+<meta name="twitter:description" content="##前言  喜欢写 Blog 的人，会经历三个阶段。 第一阶段，刚接触 Blog，觉得很新鲜，试着选择一个免费空间来写。 第二阶段，发现免费空间限制太多，就自己购买域名和空间，搭建独立博客。 第三阶段，觉得独立博客的管理太麻烦，最好在保留控制权的前提下，让别人来管，自己只负责写文章。  这是阮一峰在博客中写到的关于 Blog 的想法，而这里的第三阶段的实现就是利用 GitHub Pages 搭建博">
+<meta name="twitter:image" content="http://mac0q.github.io/2017/12/14/hexo搭建静态博客【1】/2.png">
 
 
 
@@ -139,13 +143,13 @@
 
 
 
-  <link rel="canonical" href="http://Mac0q.github.io/"/>
+  <link rel="canonical" href="http://Mac0q.github.io/2017/12/14/hexo搭建静态博客【1】/"/>
 
 
 
 
 
-  <title>死肥仔的文艺内核</title>
+  <title>hexo搭建静态博客【1】 | 死肥仔的文艺内核</title>
   
 
 
@@ -175,9 +179,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -260,9 +262,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -292,9 +294,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/14/hexo搭建静态博客【1】/" itemprop="url">hexo搭建静态博客【1】</a></h1>
+          <h1 class="post-title" itemprop="name headline">hexo搭建静态博客【1】</h1>
         
 
         <div class="post-meta">
@@ -366,21 +366,57 @@
       
 
       
-        
-          
-          ##前言
+        <p>##前言</p>
+<blockquote>
+<p>喜欢写 Blog 的人，会经历三个阶段。</p>
+<p>第一阶段，刚接触 Blog，觉得很新鲜，试着选择一个免费空间来写。<br> 第二阶段，发现免费空间限制太多，就自己购买域名和空间，搭建独立博客。<br> 第三阶段，觉得独立博客的管理太麻烦，最好在保留控制权的前提下，让别人来管，自己只负责写文章。</p>
+</blockquote>
+<p>这是阮一峰在博客中写到的关于 Blog 的想法，而这里的第三阶段的实现就是利用 GitHub Pages 搭建博客。</p>
+<p>使用 GitHub Pages 功能搭建博客的好处有： </p>
+<p><em><code>免费</code> ，GitHub 提供无限流量。
+</em>都是静态文件，世界各地都有理想的访问速度。(访问速度可以进一步优化)<br>*拥有绝对的管理权，又享受 Git 的版本管理功能，不用担心文章遗失。</p>
+<p><code>因为我用的是Mac，所以就以Mac为例了</code></p>
+<p>###环境配置<br><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">Hexo 文档</a> 有对 Hexo 安装及使用的详细介绍，推荐阅读。这里我主要写自己安装的步骤、踩过的坑以及一些优化的方法。</p>
+<p>在正式安装 Hexo 之前，我们需要确认电脑中是否已安装下列应用程序:</p>
+<p><em><a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a>
+</em><a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a><br>当然，我们还需要 GitHub 账号，如果没有请<a href="https://github.com/" target="_blank" rel="noopener">注册</a></p>
+<h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="##安装 Hexo"></a>##安装 Hexo</h2><p>所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。终端输入如下命令:<br><code>sudo npm install -g hexo-cli</code><br>然后输入密码哈</p>
+<blockquote>
+<p>sudo 一定要哈，不然报错。</p>
+</blockquote>
+<p>###初始化<br>使用终端<code>cd</code>到一个您指定的目录，执行以下命令(命令中的blog是您将要建立的文件夹的名称)：</p>
+<p><code>hexo init blog</code></p>
+<p>使用终端<code>cd</code>到<code>blog</code>文件夹下，执行以下命令，安装npm<br><code>npm install</code></p>
+<p>现在可以执行hexo指令，开启本地服务器，预览了</p>
+<p><code>hexo s</code></p>
+<p>此时，浏览器中打开网址(默认是4000端口) [<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a>] (<a href="http://localhost:4000)，能看到如下页面：![](1.png" target="_blank" rel="noopener">http://localhost:4000)，能看到如下页面：![](1.png</a>)</p>
+<h2 id="关联-GitHub"><a href="#关联-GitHub" class="headerlink" title="##关联 GitHub"></a>##关联 GitHub</h2><p>###创建仓库<br>1.登录您的 GitHub 账号，新建名称为您的用户名.github.io的仓库。假设我的 GitHub 账号的用户名是 emmm，那么我就应该新建名称为emmm.github.io的仓库。</p>
+<p>2.<code>Description</code>可写可不写，随意。</p>
+<p>3.勾上<code>Initialize this repository with a README</code>。</p>
+<p>4.点击<code>Create Repository</code>完成创建。</p>
+<p>###开启 GitHub Pages<br>点击Settings，你将会打开这个库的 Settings 页面，向下拖动，直到看见 GitHub Pages，如图:<img src="2.png" alt=""></p>
+<p>然后随意选择主题，<code>master branch</code>自动生成。</p>
+<p>##修改全局文件<br><a href="https://hexo.io/zh-cn/docs/configuration.html" target="_blank" rel="noopener">Hexo</a>官方文档中有对全局配置的详细说明，为了有个更好地理解，瞅一瞅吧。</p>
+<blockquote>
+<p>坑来了，修改本地所有的配置文件时，注意所有的冒号:后边都要加一个空格，否则执行 <code>Hexo</code> 命令时会报错，一定注意。</p>
+</blockquote>
+<p>找到本地<code>blog</code>文件夹下<code>_config.yml</code>，打开后滑到最后，修改成下边的样子：</p>
+<blockquote>
+<p>deploy:<br>  type: git<br>  repository: <a href="https://github.com/yourname/yourname.github.io.git" target="_blank" rel="noopener">https://github.com/yourname/yourname.github.io.git</a><br>  branch: master<br>然后，您需要为自己配置身份信息，终端输入yourname和youremail换成您自己的 GitHub 用户名和邮箱)：<br><code>git config --global user.name &quot;yourname&quot;</code></p>
+</blockquote>
+<p><code>git config --global user.email &quot;youremail&quot;</code></p>
+<p>终端<code>cd</code>到<code>blog</code>文件夹下执行生成静态页面命令：</p>
+<blockquote>
+<p>hexo g<br>若出现报错：</p>
+<blockquote>
+<p>ERROR Local hexo not found in ~/blog<br>  ERROR Try runing: ‘npm install hexo –save’<br>尝试执行命令：<br>npm install hexo –save<br>若无，忽略。<br>当前目录下输入：<br>hexo d<br>若报错：无法连接 git 或找不到 git，则执行如下命令来安装<code>hexo-deployer-git</code>：</p>
+</blockquote>
+</blockquote>
+<p><code>npm install hexo-deployer-git --save</code></p>
+<p>完成安装之后，再次执行<code>hexo g</code>和<code>hexo d</code>命令。</p>
+<p>随后按照提示，分别输入自己的 GitHub 用户名和密码，开始上传。</p>
+<p>再然后就可以通过<code>http://xxx.github.io/</code>访问了。enjoy it。</p>
 
-喜欢写 Blog 的人，会经历三个阶段。
-第一阶段，刚接触 Blog，觉得很新鲜，试着选择一个免费空间来写。 第二阶段，发现免费空间限制太多，就自己购买域名和空间，搭建独立博客。 第三阶段
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/12/14/hexo搭建静态博客【1】/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
       
     </div>
     
@@ -395,287 +431,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://Mac0q.github.io/2017/12/14/我记忆中的余光中是你没不知道的样子/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="mac0q">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="死肥仔的文艺内核">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/14/我记忆中的余光中是你没不知道的样子/" itemprop="url">我记忆中的余光中是你不知道的样子</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-14T16:17:20+08:00">
-                2017-12-14
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/恶魔妈妈？/" itemprop="url" rel="index">
-                    <span itemprop="name">恶魔妈妈？</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/技术/" rel="tag"><i class="fa fa-tag"></i> 技术</a>
           
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          <p>你别说，这句话读起来还挺有意思哈。<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/12/14/我记忆中的余光中是你没不知道的样子/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/12/14/我记忆中的余光中是你没不知道的样子/" rel="next" title="我记忆中的余光中是你不知道的样子">
+                <i class="fa fa-chevron-left"></i> 我记忆中的余光中是你不知道的样子
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://Mac0q.github.io/2017/12/11/圣诞快乐呀/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="mac0q">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="死肥仔的文艺内核">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/11/圣诞快乐呀/" itemprop="url">圣诞快乐呀</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+          <div class="post-nav-prev post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-11T14:59:14+08:00">
-                2017-12-11
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-          emmm 圣诞节没有礼物 prprpr好吧。雪花的特效做不出。那为什么有这篇blog呢？留个坑呗。以后填掉。
-
-          
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/12/11/圣诞快乐呀/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -685,136 +470,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://Mac0q.github.io/2016/12/14/给你一座图书馆好不好/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="mac0q">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="死肥仔的文艺内核">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2016/12/14/给你一座图书馆好不好/" itemprop="url">给你一座图书馆好不好</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-12-14T00:56:45+08:00">
-                2016-12-14
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          送你一座图书馆－－教你获得全世界任何一本书我是一个贪心的死肥宅，贪，十分的贪。对喜欢的会“如饥似渴”，我喜欢看书，巴不得把所有的书都“占为己有“，有人认为我异想天开，不，我已经做到了，那就是使用网络。
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2016/12/14/给你一座图书馆好不好/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -822,6 +482,11 @@
 
 
           
+  <div class="comments" id="comments">
+    
+
+  </div>
+
 
         </div>
         
@@ -842,8 +507,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -911,6 +585,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-Hexo"><span class="nav-number">1.</span> <span class="nav-text"><a href="#&#x5B89;&#x88C5;-Hexo" class="headerlink" title="##&#x5B89;&#x88C5; Hexo"></a>##&#x5B89;&#x88C5; Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关联-GitHub"><span class="nav-number">2.</span> <span class="nav-text"><a href="#&#x5173;&#x8054;-GitHub" class="headerlink" title="##&#x5173;&#x8054; GitHub"></a>##&#x5173;&#x8054; GitHub</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1028,10 +718,10 @@
   
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
 
-  
+
 
   
 
